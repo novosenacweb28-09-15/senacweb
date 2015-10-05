@@ -1,0 +1,12 @@
+h1{
+   /* propriedade: titulo principal;*/
+    color:red;
+}
+
+li{
+/* tirar os pontos */
+list-style: mome;
+
+    /*deixar um ao lado do outro */
+    display: inline-block;
+}
