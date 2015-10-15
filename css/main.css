@@ -1,3 +1,36 @@
+font-family:'roboto', 'sans-serif';
+#cabecalho
+{
+    
+    border: 1px solid #000;
+    /*borda arredondada*/
+    border-radius: 5px;
+    padding: 10px;
+    
+    
+    float: left;
+    width: 100%;
+    
+}
+
+.logo {
+    float: left;
+}
+
+.Menu {
+    float: left;
+}
+
+.Menu-link{
+    display: inline-block;
+    margin-right: 5px;
+}
+.form-pesquisa{
+
+    float: left;
+}
+
+
 h1{
    /* propriedade: titulo principal;*/
     color:red;
