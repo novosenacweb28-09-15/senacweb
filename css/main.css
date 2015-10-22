@@ -1,4 +1,10 @@
-font-family:'roboto', 'sans-serif';
+body {
+
+background-color: #eee;
+
+font-family:'Roboto', sans-serif;
+}
+
 #cabecalho
 {
     
@@ -8,26 +14,28 @@ font-family:'roboto', 'sans-serif';
     padding: 10px;
     
     
-    float: left;
-    width: 100%;
-    
 }
 
 .logo {
-    float: left;
+    
+    display: inline-block;
 }
 
-.Menu {
-    float: left;
+.menu {
+   display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
-.Menu-link{
+.menu-link{
     display: inline-block;
     margin-right: 5px;
 }
-.form-pesquisa{
 
-    float: left;
+.form-pesquisa{ 
+    display: inline-block;
+    margin-top: 15px;
+    
 }
 
 
@@ -36,10 +44,34 @@ h1{
     color:red;
 }
 
-li{
-/* tirar os pontos */
-list-style: mome;
+li{ 
+    list-style: none;
 
     /*deixar um ao lado do outro */
-    display: inline-block;
+    display:inline-block;
 }
+
+.centralizar{
+    margin-right: auto;
+    margin-left: auto;
+    width: 900px;
+}
+
+.img-principal {
+ float: left;   
+}
+
+.img-list {
+ clear: left;   
+}
+
+#rodape {
+border-top: 1px solid #222;
+}
+
+#rodape p {
+    font-size: 12px;
+    text-align: center;
+}
+
+
