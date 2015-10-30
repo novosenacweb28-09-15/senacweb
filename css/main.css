@@ -39,7 +39,7 @@ display: inline-block;
 .centralizar {
 margin-right: auto;
 margin-left: auto;
-width: 900px;
+width: 500px;
 }
 .img-principal {
 float: left; /* flutuar para esquerda */
@@ -54,4 +54,8 @@ border-top: 1px solid #222;
 #rodape p {
 font-size: 12px;
 text-align: center;
+}
+
+h5 {
+    color: black;
 }
