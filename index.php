@@ -12,15 +12,28 @@ $app->get('/hello/:name', function ($name) {
     $divisao = $inteiro1 / $fracao;
     $multi = $inteiro2 * $fracao;
     $olaMundo = $texto . $name;
+
     echo "<p>Soma: " . $soma . "</p>";
     echo "<p>Divisao: " . $divisao . "</p>";
     echo "<p>Multiplica: " . $multi . "</p>";
     echo "<p>" . $olaMundo . "</p>";
 
 
-
-
-
-    echo "Hello, " . $name;
 });
+
+$app->get('/', function() use ($app) {
+    $app->view->setData(array('title' => 'página principal', 
+                              'page' => 'page/home'
+                             ));
+    $app->render('layout.php');
+});
+
+$app->get('/sobre' , function() use($app) {
+    $app->view->setData
+        (array('title' => 'página sobre',
+               'page' => 'page/about'
+              ));    
+    $app->render('layout.php');
+});
+
 $app->run();
